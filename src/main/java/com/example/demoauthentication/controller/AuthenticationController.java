@@ -10,7 +10,7 @@ public class AuthenticationController {
 
     @GetMapping("/authorize")
     public String authorize(@RequestParam("client_id") String clientId, @RequestParam("redirect_url") String redirectUrl, @RequestParam String state, @RequestParam("code_challenge") String codeChallenge) {
-        return "signin";
+        return "sign-in";
     }
     @PostMapping("/login")
     public String signIn(){
